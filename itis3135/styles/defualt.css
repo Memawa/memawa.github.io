@@ -1,0 +1,102 @@
+title, h1{
+text-align: center;
+color: #2E3532;
+font-family: Verdana;
+
+}
+h2{
+    text-align: center;
+    font-family: Verdana;
+    color: #8B2635;
+}
+h3{
+    text-align: center;
+    font-family: Verdana;
+}
+nav{
+    text-align: center;
+    font-family: Verdana;
+}
+main{
+    min-height: 400px;
+}
+.keyinfo{
+    text-align: center;
+    font-family: Verdana;
+}
+body{
+    background-color:#E0E2DB ;
+}
+label, input{
+    text-align: center;
+
+}
+html{
+    
+    font-family: Verdana; 
+    
+}
+.intro{
+    
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+legend{
+    text-align: center;
+}
+.input{
+    background-color:#2E3532;
+    color: beige;
+
+}
+a:link{color: #8B2635}
+a:visited{color: #8B2635}
+a:hover{color: #000;}
+form{
+    max-width: 1700px;
+}
+footer{
+    text-align: center;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.capcenter{
+    text-align: center;
+}
+.table1{
+    margin-left: 29rem;
+    margin-right: 10rem;
+}
+
+.employee{
+    margin-left: auto;
+}
+.centertext{
+    text-align: center;
+}
+.centertxt{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    
+}
+.script{
+    border: 3px;
+    border-style: solid;
+    border-color: #000;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: center;
+}
+input , form{
+   text-align: center;  /* Center Align */
+   
+}
+

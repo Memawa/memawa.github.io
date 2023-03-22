@@ -1,0 +1,17 @@
+.table{
+    background-color: black;
+    color: #F7F0F0; 
+    margin-left: 28rem;
+    margin-right: 10rem; 
+}
+
+.color1{
+    background-color: #18A999;
+}
+.color2{
+    background-color: #8AF3FF;
+}
+.th{
+    background-color:#109648;
+    color: cyan;
+}

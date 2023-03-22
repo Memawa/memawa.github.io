@@ -1,0 +1,57 @@
+title, h1{
+text-align: center;
+color: #16425B;
+font-family: Verdana;
+
+}
+h2{
+    text-align: center;
+    font-family: Verdana;
+    color: #2F6690;
+}
+h3{
+    text-align: center;
+    font-family: Verdana;
+}
+nav{
+    text-align: center;
+    font-family: Verdana;
+}
+.keyinfo{
+    text-align: center;
+    font-family: Verdana;
+}
+body{
+    background-color:#D9DCD6;
+}
+label, input{
+    text-align: center;
+
+}
+p, ul, li{
+    font-family: Verdana; 
+}
+legend{
+    text-align: center;
+}
+.input{
+    background-color:#2E3532;
+    color: beige;
+
+}
+a:link{color: #81C3D7}
+a:visited{color: teal;}
+a:hover{color: #000;}
+form{
+    max-width: 1700px;
+}
+footer{
+    text-align: center;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+

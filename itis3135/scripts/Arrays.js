@@ -2,13 +2,17 @@ let people= [];
 let salary = [];
 
 function addSalary(){
-    const fullName = document.getElementById("Fullname").value;
-    const salary = parseInt(document.getElementById("salary").value);
+    //Gets name and salary from input
+    let fullName = document.getElementById("Fullname").value;
+    let salaryInfo = parseInt(document.getElementById("salary").value);
     
-    salary.add(salary);
-    people.add(fullName);
+    //Adds salrary and name into the arrays
+    salary.push(salaryInfo);
+    people.push(fullName);
+    console.log(people);
    
-    const print = "The employees name is " + fullName + " and the salary is " + salary + ". ";
+    //Sends the information to Html
+    let print = "The employees name is " + fullName + " and the salary is " + salary + ". ";
     document.getElementById("print").innerHTML= print;
 }
 
@@ -26,6 +30,7 @@ function displayResults(){
     // Finds the average of the salary
     for(let i= 0; i < salary.length(); i++){
         average += salary[i];
+        average = salary.length / average; 
     }
     //Prints the 
     result = "The average is salary " + average + " and the highest salary is " + highest + ". ";

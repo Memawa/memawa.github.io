@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #000;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/001/308/327/original/mountains-at-night-landscape-scene-vector.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+li {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+a:hover {
+    color: blue;
+}
+
+header {
+    position: relative;
+    padding: 0 2rem;
+
+}
+
+/*NAV BAR */
+.navbar {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* DROPDOWN */
+.dropdown {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown.open {
+    height: 240px;
+}
+
+.dropdown li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown .action {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* ACTION */
+.action {
+    background-color: blue;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.action:hover {
+    scale: 1.05;
+    color: #fff;
+}
+
+.action:active {
+    scale: 0.95;
+}
+
+@media(max-width: 992px) {
+
+    .navbar .links,
+    .navbar .action {
+        display: none;
+    }
+
+    .navbar .toggle {
+        display: block;
+    }
+
+    .dropdown {
+        display: block;
+    }
+}
+
+@media(max-width: 576px) {
+    .dropdown {
+        left: 2rem;
+        width: unset;
+    }
+}
+
+
+/* General CSS*/
+
+.centertxt {
+    text-align: center;
+    color: #fff;
+}
+
+.centerfooter {
+    padding-top: 2rem;
+    text-align: center;
+    color: #fff;
+}
+
+.text {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding-top: 2rem;
+    padding-top: 3rem;
+    color: #fff;
+}
+
+.example {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 170px;
+    height: 150px;
+    padding-bottom: 20px;
+}
+
+
+
+
+/* PHOTO STUFF */
+
+.photo {
+    display: block;
+    margin-left: 5rem;
+    margin-right: 12rem;
+    width: 60px;
+
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    width: 20%;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+
+.centerPhoto {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 10px;
+}
+
+/* about us */
+
+.float-container {
+    border: 3px solid #fff;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    padding: 20px;
+}
+
+.float-child {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    border: 2px solid #fff;
+    border-top: none;
+    border-bottom: none;
+
+}
+
+.float-child.right {
+    border-left: none;
+}
+
+.float-child.left {
+    border-right: none;
+}
+
+.textli {
+    color: #fff;
+}
+
+/* JAVASCRIPT */
+
+button {
+    border: 10px;
+    margin-top: 10px;
+    border-radius: 30px;
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input,
+form {
+    text-align: center;
+    border: none;
+
+}
+
+input {
+    color: #000;
+    background: #f2f2f2;
+    padding: 12px;
+    border-radius: 6px;
+    width: 150px;
+    font-size: 14px;
+}
+
+.centerfooter.down{
+    padding-top: 20px;
+    margin-top: 20px;
+}
+.text.two{
+    padding-top: 4rem;
+    margin-top: 10rem;
+}
+
+.textli.marg{
+    margin-right: 27rem;
+    margin-left: 27rem;
+}
+
+.centertxt.bl{
+    color: #000;
+}
+
+.centerPhoto.small{
+    height: 25%;
+    width: 25%;
+}

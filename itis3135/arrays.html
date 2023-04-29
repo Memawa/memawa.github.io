@@ -4,61 +4,74 @@
 <head>
     <title>ITIS 3135 | Mekhi Washington' Masterful Wolf | Arrays</title>
     <link href="styles/defualt.css" rel="stylesheet">
-    
+
 </head>
 
 <body>
     <header>
         <h1> Mekhi Washington' Masterful Wolf</h1>
         <h3></h3>
-                <nav>
-                <a href="index.html" >Home</a> |
-                <a href="introduction.html" >Introduction</a> |
-                <a href="contract.html" >Contract</a> |
-                <a href="tables.html" >Table</a> |
-                <a href="forms.html" >Form</a> |
-                <a href="website_evaluations.html" >Website eval</a> |
-                <a href="./stuff/New WEb!page.htm" > CRAP</a> |
-                <a href="firstscript.html" > Script</a> |
-                <a href="polygons.html" > Polygon</a> |
-                <a href="calculator.html" > Calculator</a> |
-                <a href="calculator_try.html" > Calculator Try</a> |
-                <a href="arrays.html" > Arrays</a> |
-                <a href="" class="navItem">More to come</a> |
+        <div>
+            <nav>
+                <a href="index.html">Home</a> |
+                <a href="introduction.html">Introduction</a> |
+                <a href="contract.html">Contract</a> |
+                <a href="tables.html">Table</a> |
+                <a href="forms.html">Form</a> |
+                <a href="website_evaluations.html">Website eval</a> |
+                <a href="firstscript.html"> Script</a> |
+                <a href="polygons.html"> Polygon</a> |
+                <a href="calculator.html"> Calculator</a> |
+                <a href="calculator_try.html"> Calculator Try</a> |
+                <a href="arrays.html"> Arrays</a> |
+                <a href="./hobby/index copy.html"> Hobby</a> |
+                <a href="project_1.html"> Project 1</a> |
+                <a href="./client_page/index.html"> Project 2</a> |
+                <div class="dropdown">
+                    <button class="dropbtn">Second Menu </button>
+                    <div class="dropdown-content">
+                        <a href="./stuff/New WEb!page.htm"> CRAP</a>
+                        <a href="slideshow.html"> Slide</a>
+                    </div>
+                </div>
             </nav>
+        </div>
+
     </header>
     <main>
         <h2>Arrays</h2>
+
         <div class="script">
             <label for="names">Names</label>
-                <select name="namelist" id="list">Names
-                    <option value="Select">Select</option>
-                    <option value="carlos">Carlos</option>
-                    <option value="ronald">Ronald</option>
-                </select>
-       
-            <p>Please put Name and Salary<p>
-            
+            <select name="namelist" id="list">Names
+                <option value="Select">Select</option>
+                <option value="carlos">Carlos</option>
+                <option value="ronald">Ronald</option>
+            </select>
+
+            <p>Please put Name and Salary
+            <p>
+
                 <input class="centertxt" type="text" id="Fullname" placeholder="Name">
                 <input class="centertxt" type="text" id="salary" placeholder="Salary">
 
                 <button class="center" onclick="addSalary()">Add</button>
-                <h2 class="center" id="print"></h2>
-            
+            <h2 class="center" id="print"></h2>
 
-              <button class="center" onclick="displayResult()">Display Result</button>  
-                <p class="centertxt" id ="results"></p>
-        
+
+            <button class="center" onclick="displayResult()">Display Result</button>
+            <p class="centertxt" id="results"></p>
+
 
             <table id="results_table">
                 <tr>
-                  <th>Name</th>
-                  <th>Salary</th>
+                    <th>Name</th>
+                    <th>Salary</th>
                 </tr>
-              </table>
-              <button class="center" onclick="displaySalary()">Display salaries</button>
+            </table>
+            <button class="center" onclick="displaySalary()">Display salaries</button>
         </div>
-        
+
 
     </main>
     <footer>
@@ -68,7 +81,7 @@
         <p></p>
         <p> <a href="washingtongroup.co/index.html">WashingtonGroup</a> &copy;2023</p>
     </footer>
-    
+
 </body>
 <script src="./scripts/Arrays.js"></script>
 

@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
 
 <head>
-    <meta charset="utf-8">
-    <title>ITIS 3135 | Mekhi Washington' Masterful Wolf | Calculator</title>
-    <link href="styles/calculator.css" rel="stylesheet">
+    <title>ITIS 3135 | Mekhi Washington' Masterful Wolf | SlideShow</title>
     <link href="styles/defualt.css" rel="stylesheet">
-    <script src="./scripts/calculatorTry.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="scripts/Slide.js"></script>
 </head>
 
 <body>
@@ -40,38 +39,27 @@
         </div>
     </header>
     <main>
-        <h2>Calculator</h2>
-
-        <div class="calculator-grid">
-            <div class="output">
-            <div data-previous-operand class="previous-operand"></div>
-            <div data-current-operand class="current-operand"></div>
-            </div>
-            <button data-all-clear class="span-two">AC</button>
-            <button data-delete>DEL</button>
-            <button data-operation>÷</button>
-            <button data-number>1</button>
-            <button data-number>2</button>
-            <button data-number>3</button>
-            <button data-operation>*</button>
-            <button data-number>4</button>
-            <button data-number>5</button>
-            <button data-number>6</button>
-            <button onclick="addNum()">+</button>
-            <button data-number>7</button>
-            <button data-number>8</button>
-            <button data-number>9</button>
-            <button onclick="subtractNum()">-</button>
-            <button data-number>.</button>
-            <button data-number>0</button>
-            <button data-equals class="span-two">=</button>
-            </div>
-
-
-
-
-
-
+        <h2>Home</h2>
+        <h1>My Image Slideshow</h1>
+		
+		<div id="slideshow">
+			<img class="centerimg" src="./images/Pictureofme.jpg" alt="Image 1">
+			<img class="centerimg" src="./images/Lambo.jpg" alt="Image 2">
+			<img class="centerimg" src="./hobby/images/bleach.jpg" alt="Image 3">
+			<img class="centerimg" src="./hobby/images/p5.jpg" alt="Image 4">
+			<img class="centerimg" src="./hobby/images/anime.jpg" alt="Image 5">
+			<img class="centerimg" src="./hobby/images/destiny.jpg" alt="Image 6">
+		</div>
+		<nav>
+		
+			<li><a href="./images/Pictureofme.jpg">Image 1</a></li>
+			<li><a href="./images/Lambo.jpg">Image 2</a></li>
+			<li><a href="./hobby/images/bleach.jpg">Image 3</a></li>
+			<li><a href="./hobby/images/p5.jpg"">Image 4</a></li>
+			<li><a href="./hobby/images/anime.jpg">Image 5</a></li>
+			<li><a href="./hobby/images/destiny.jpg">Image 6</a></li>
+		
+        </nav>
     </main>
     <footer>
         <nav>

@@ -7,8 +7,8 @@ function addSalary(){
     let salaryInfo = parseInt(document.getElementById("salary").value);
     
     //Adds salrary and name into the arrays
-    salary.push(salaryInfo);
-    people.push(fullName);
+    salary.push(salaryInfo.value);
+    people.push(fullName).value;
     console.log(people);
    
     //Sends the information to Html

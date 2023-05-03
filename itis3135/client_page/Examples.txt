@@ -1,0 +1,13 @@
+      <h3 class="centertxt">Enter Name</h3>
+               
+                <form id="form1">
+                    <input class="centertxt bl" id="name" type="text" title="Please put your name here">
+                    <input class="centertxt bl" id="mood" type="text" title="How are you feeling">
+                </form>
+
+                <button class="center" onclick="getName()">Submit</button>
+
+   <h3 class="centertxt" id="printhere"></h3>
+
+ 
+                        <img class="centerPhoto" src="images/JS2.png" alt="">

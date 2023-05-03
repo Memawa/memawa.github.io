@@ -1,0 +1,11 @@
+   <h3 class="centertxt">Put two numbers in</h3>
+           
+            <form>
+                <input class="centertxt bl" type="text" id="num1" title="First Number">
+                <input class="centertxt bl" type="text" id="num2" title="Second Number">
+            </form>
+            <button class="center" onclick="addNum()">Add</button>
+
+ <h3 class="centertxt" id="addhere"></h3>
+
+<img class="centerPhoto" src="images/JS3.png" alt="">

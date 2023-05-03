@@ -1,0 +1,9 @@
+      <ul>
+            <li class="textli marg"><strong>Document: </strong>Points at the DOM, telling the browser to look within our
+                HTML document.</li>
+            <li class="textli marg"><strong>.(Period): </strong>Tells the browser to go in the document object.</li>
+            <li class="textli marg"><strong>GetElementByID: </strong>Gets the element with an id of “text” from the
+                document.</li>
+            <li class="textli marg"><strong>innerHTML: </strong>Specifies how we want to change the selected element –
+                in this case, changing its content.</li>
+        </ul>

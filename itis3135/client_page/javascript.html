@@ -11,17 +11,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">  
-        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
-        <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script> 
-        <script>
-            $(function() {  
-                $("#name").tooltip();  
-                $("#mood").tooltip();  
-                $("#num1").tooltip();  
-                $("#num2").tooltip();
-                });
-        </script> 
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src = "jquery.debug.js" type = "text/javascript"></script>
+    <script>
+        $(function () {
+            $("#Home").tooltip();
+            $("#HTML").tooltip();
+            $("#CSS").tooltip();
+            $("#JavaScript").tooltip();
+        });
+       
+    </script>
+
+    <script>
+         $(document).ready(function(){
+            $("#btn").click(function(){
+                $("#test").load("JS.txt")
+            });
+        });
+
+        $(document).ready(function(){
+            $("#bttn").click(function(){
+                $("#exam1").load("Examples.txt")
+            });
+            $("#bttn").click(function(){
+                $("#exam2").load("Examplez.txt")
+            });
+
+        });
+    </script>
 </head>
 
 <body>
@@ -29,10 +50,10 @@
         <div class="navbar">
             <div class="logo"><a href="#">Guled Corp Tutorials</a></div>
             <ul class="links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="html.html">HTML</a></li>
-                <li><a href="css.html">CSS</a></li>
-                <li><a href="javascript.html">JavaScript</a></li>
+                <li><a id="Home" title="Home" href="index.html">Home</a></li>
+                <li><a id="HTML" title="HTML" href="html.html">HTML</a></li>
+                <li><a id="CSS" title="CSS" href="css.html">CSS</a></li>
+                <li><a id="JavaScript" title="JavaScript" id="js" href="javascript.html">JavaScript</a></li>
             </ul>
             <a href="about_us.html" class="action">About Us</a>
             <div class="toggle">
@@ -55,54 +76,67 @@
             functions under this to show off what
             is possible.
         </p>
+        <button class = "center big" id="bttn">Examples</button>
         <div class="float-child right">
             <div class="green">
-                <h3 class="centertxt">Enter Name</h3>
+
+                <div id="exam1"></div>
+
+                <!-- <h3 class="centertxt">Enter Name</h3>
+               
                 <form id="form1">
-                    <input class="centertxt bl" id="name" type="text"  title="Please put your name here">
+                    <input class="centertxt bl" id="name" type="text" title="Please put your name here">
                     <input class="centertxt bl" id="mood" type="text" title="How are you feeling">
                 </form>
 
-                <button class="center" onclick="getName()">Submit</button>
-                <h3 class="centertxt" id="printhere"><h3>
-                
-                    
-                <img class="centerPhoto" src="images/JS2.png" alt="">
-                    
+                <button class="center" onclick="getName()">Submit</button> 
+                <h3 class="centertxt" id="printhere"></h3>
+
+ 
+                        <img class="centerPhoto" src="images/JS2.png" alt="">-->
+
             </div>
         </div>
 
         <div class="float-child left">
             <div class="blue">
-                <h3 class="centertxt">Put two numbers in</h3>
-            </div>
+
+                <div id="exam2"></div>
+                <!-- <h3 class="centertxt">Put two numbers in</h3> 
+           
             <form>
-                <input class="centertxt" type="text" id="num1" title="First Number">
-                <input class="centertxt" type="text" id="num2" title="Second Number">
+                <input class="centertxt bl" type="text" id="num1" title="First Number">
+                <input class="centertxt bl" type="text" id="num2" title="Second Number">
             </form>
             <button class="center" onclick="addNum()">Add</button>
             <h3 class="centertxt" id="addhere"></h3>
 
-            
-                <img class="centerPhoto" src="images/JS3.png" alt="">
-            
+
+            <img class="centerPhoto" src="images/JS3.png" alt="">-->
+            </div>
         </div>
-        <p class="text two">These two functions are both created using JavaScript and can be changed to to many things. These are just limited to basic
+        <p class="text two">These two functions are both created using JavaScript and can be changed to to many things.
+            These are just limited to basic
             things like addition and welcoming you but there are unless possibilities with JavaScript. On
         </p>
-        <ul>
-            <li class="textli marg"><strong>Document: </strong>Points at the DOM, telling the browser to look within our HTML document.</li>
+        <button class="center big" id="btn">More info</button>
+        <div id="test"></div>
+        <!-- <ul> 
+            <li class="textli marg"><strong>Document: </strong>Points at the DOM, telling the browser to look within our
+                HTML document.</li>
             <li class="textli marg"><strong>.(Period): </strong>Tells the browser to go in the document object.</li>
-            <li class="textli marg"><strong>GetElementByID: </strong>Gets the element with an id of “text” from the document.</li>
-            <li class="textli marg"><strong>innerHTML: </strong>Specifies how we want to change the selected element – in this case, changing its content.</li>
-        </ul>
+            <li class="textli marg"><strong>GetElementByID: </strong>Gets the element with an id of “text” from the
+                document.</li>
+            <li class="textli marg"><strong>innerHTML: </strong>Specifies how we want to change the selected element –
+                in this case, changing its content.</li>
+        </ul>-->
     </main>
     <footer>
         <nav>
 
         </nav>
         <p></p>
-        <p class="centerfooter down"> <a href="washingtongroup.co/index.html">WashingtonGroup</a> &copy;2023</p>
+        <p class="centerfooter down"> <a href="./washingtongroup.co/index.html">WashingtonGroup</a> &copy;2023</p>
     </footer>
 </body>
 
